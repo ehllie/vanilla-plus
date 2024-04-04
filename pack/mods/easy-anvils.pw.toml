@@ -1,0 +1,13 @@
+name = "Easy Anvils"
+filename = "EasyAnvils-v20.4.3-1.20.4-Fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/OZBR5JT5/versions/XLEe4VlA/EasyAnvils-v20.4.3-1.20.4-Fabric.jar"
+hash-format = "sha1"
+hash = "ce9c41c7d2cbf00c82ffb5b636aaffb6b8cac984"
+
+[update]
+[update.modrinth]
+mod-id = "OZBR5JT5"
+version = "XLEe4VlA"

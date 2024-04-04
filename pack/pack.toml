@@ -1,0 +1,16 @@
+name = "vanilla-plus"
+author = "Ehllie"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "b8bf2acea8ff5c0ebe6b0e67e4a1e9d1fc90447e55ab0ced26f7049f8cc0bf73"
+
+[versions]
+fabric = "0.15.9"
+minecraft = "1.20.4"
+
+[options]
+acceptable-game-versions = ["1.20.1"]
