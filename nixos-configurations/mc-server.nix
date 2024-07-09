@@ -108,6 +108,9 @@
           Ellie_eh = "fdfb210e-c03b-4e6a-bb9d-cb647786c4a5";
           SaxyPandaBear = "773d108e-bbb4-4bef-b3dd-137413f62b97";
           ponty10 = "d33471d8-1c4f-481b-87d6-b28ec77828c7";
+          UnlockedWifi42 = "a1504016-bb4c-4eda-9758-bed6c493891a";
+          Razentic12 = "35b16250-5264-4e9f-9e55-5dea17277b4f";
+          danipenguin = "d1fd607d-3bc9-49cd-83fd-469414ae3289";
         };
       };
     };
