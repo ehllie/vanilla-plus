@@ -98,9 +98,11 @@
           "mods" = "${pkgs.vanilla-plus-server}/mods";
         };
         serverProperties = {
-          difficulty = "normal";
+          difficulty = "hard";
           white-list = true;
           motd = "Vanilla+ server";
+          view-distance = 16;
+          simulation-distance = 12;
         };
         whitelist = {
           Ellie_eh = "fdfb210e-c03b-4e6a-bb9d-cb647786c4a5";
