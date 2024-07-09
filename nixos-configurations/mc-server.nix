@@ -81,7 +81,19 @@
       servers.vanilla-plus = {
         enable = true;
         package = pkgs.fabricServers.fabric-1_20_4;
-        jvmOpts = "-Xms6G -Xmx6G";
+        jvmOpts = builtins.concatStringsSep " " [
+          "-Xms6G"
+          "-Xmx6G"
+          "-XX:+UseG1GC"
+          "-XX:+UnlockExperimentalVMOptions"
+          "-XX:MaxGCPauseMillis=35"
+          "-XX:+DisableExplicitGC"
+          "-XX:TargetSurvivorRatio=90"
+          "-XX:G1NewSizePercent=50"
+          "-XX:G1MaxNewSizePercent=80"
+          "-XX:G1MixedGCLiveThresholdPercent=50"
+          "-XX:+AlwaysPreTouch"
+        ];
         symlinks = {
           "mods" = "${pkgs.vanilla-plus-server}/mods";
         };
