@@ -54,9 +54,16 @@
           in
           rec {
             default = vanilla-plus-server;
-            vanilla-plus-server = bootstrapPackwiz {
+            vanilla-plus-server = (bootstrapPackwiz {
               src = ./pack;
-              packHash = "sha256-v7aC1k99ebza+eCY02U7BfSBiW7wzR4NQqAIzJxN4kU=";
+              packHash = "sha256-Pld3WYJppMlvebsaj6DfC/AKRp7lQIy0cEPpMirVvWc=";
+            }).addFiles {
+              "mods/Discord-MC-Chat.jar" = pkgs.fetchurl rec {
+                pname = "Discord-MC-Chat";
+                version = "2.3.3";
+                url = "https://github.com/Xujiayao/Discord-MC-Chat/releases/download/${version}/${pname}-${version}.jar";
+                hash = "sha256-u5BkwDE1JMf5BSMji7pYiZKJW+jNtwbnY6RtfBb0FCY=";
+              };
             };
           };
       };
