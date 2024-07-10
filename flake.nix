@@ -60,9 +60,9 @@
             }).addFiles {
               "mods/Discord-MC-Chat.jar" = pkgs.fetchurl rec {
                 pname = "Discord-MC-Chat";
-                version = "2.3.3";
+                version = "2.3.2";
                 url = "https://github.com/Xujiayao/Discord-MC-Chat/releases/download/${version}/${pname}-${version}.jar";
-                hash = "sha256-u5BkwDE1JMf5BSMji7pYiZKJW+jNtwbnY6RtfBb0FCY=";
+                hash = "sha256-nNyAFnjvRPgaQMolvMWCTcC/7UIRXAVjuGCvLLukEFA=";
               };
             };
           };
