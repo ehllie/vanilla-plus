@@ -1,13 +1,13 @@
 name = "Vanilla Refresh"
-filename = "vanilla-refresh-1.4.19h.jar"
+filename = "vanilla-refresh-1.4.28.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/gWO6Zqey/versions/NPi0svI8/vanilla-refresh-1.4.19h.jar"
-hash-format = "sha1"
-hash = "d4224e54e2aecced47423106cf6c390a7a3f93d7"
+url = "https://cdn.modrinth.com/data/gWO6Zqey/versions/L1WNSxKw/vanilla-refresh-1.4.28.jar"
+hash-format = "sha512"
+hash = "c148e4100dac671d67439246e6ee8ac234f7db5fd850b9aeb537dbef9e002746d98d50df6d2947b1a2fb277819f9d4c449cb9759dda1939d056dc36191e70c66"
 
 [update]
 [update.modrinth]
 mod-id = "gWO6Zqey"
-version = "NPi0svI8"
+version = "L1WNSxKw"

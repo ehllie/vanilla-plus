@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     parts = {
       url = "github:hercules-ci/flake-parts";
       inputs.nixpkgs-lib.follows = "nixpkgs";
@@ -36,36 +36,49 @@
         globalArgs = { inherit inputs; };
       };
 
-      perSystem = { pkgs, config, ... }: {
-        devShells.default = pkgs.mkShell {
-          name = "vanilla-plus-shell";
-          packages = [ pkgs.packwiz pkgs.updog ];
-        };
-
-        overlayAttrs = {
-          inherit (config.packages)
-            vanilla-plus-server
-            ;
-        };
-
-        packages =
-          let
-            bootstrapPackwiz = pkgs.callPackage ./bootstrapPackwiz.nix { };
-          in
-          rec {
-            default = vanilla-plus-server;
-            vanilla-plus-server = (bootstrapPackwiz {
-              src = ./pack;
-              packHash = "sha256-Pld3WYJppMlvebsaj6DfC/AKRp7lQIy0cEPpMirVvWc=";
-            }).addFiles {
-              "mods/Discord-MC-Chat.jar" = pkgs.fetchurl rec {
-                pname = "Discord-MC-Chat";
-                version = "2.3.2";
-                url = "https://github.com/Xujiayao/Discord-MC-Chat/releases/download/${version}/${pname}-${version}.jar";
-                hash = "sha256-nNyAFnjvRPgaQMolvMWCTcC/7UIRXAVjuGCvLLukEFA=";
-              };
-            };
+      perSystem = { pkgs, config, system, ... }:
+        let
+          fetchPackwizModpack = inputs.nix-minecraft.legacyPackages.${system}.fetchPackwizModpack;
+        in
+        {
+          devShells.default = pkgs.mkShell {
+            name = "vanilla-plus-shell";
+            packages = [ pkgs.packwiz ];
           };
-      };
+
+          overlayAttrs = {
+            inherit (config.packages)
+              vanilla-plus-server
+              vanilla-plus-manifest
+              ;
+          };
+
+          packages = rec {
+            default = vanilla-plus-server;
+            vanilla-plus-server = (fetchPackwizModpack {
+              src = ./pack;
+              packHash = "sha256-TBjQLF7uVnwKrfZO9rtaUp6Z4+O5dThAcyaEqMZ/SVI=";
+            });
+            vanilla-plus-manifest = pkgs.runCommand
+              "vanilla-plus-manifest"
+              {
+                buildInputs = [ pkgs.packwiz ];
+                __noChroot = true;
+                # outputHashMode = "recursive";
+                # outputHashAlgo = "sha256";
+                # outputHash = "";
+              } ''
+              set -euo pipefail
+              HOME=$(mktemp -d) # packwiz tries to write to a user cache directory
+              mkdir -p $out
+
+              cp -r ${./pack}/. .
+              chmod +w -R . # packwiz tries to open all pack files in rw mode
+              packwiz modrinth export
+
+              mv vanilla-plus*.mrpack "$out/manifest.mrpack"
+            '';
+          };
+        };
     };
 }
