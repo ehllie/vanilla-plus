@@ -4,8 +4,8 @@ side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/50dA9Sha/versions/3s2JmLwU/FreshAnimations_v1.10.zip"
-hash-format = "sha512"
-hash = "afb101504da975fb96dd2ef99741dd1198a7c643e53801d71b5e662adfd70118d9ff64fab8eb0af2d00e11ec20faefe4dd24379384dcb70cebd757c662c946f0"
+hash-format = "sha256"
+hash = "e89d61c5ac0ec353d2813ff642e1e7744d2eb2d08cd3be449b13f61475766b92"
 
 [update]
 [update.modrinth]

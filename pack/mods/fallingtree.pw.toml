@@ -1,11 +1,11 @@
 name = "FallingTree"
 filename = "FallingTree-1.21.8-1.21.8.2.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/Fb4jn8m6/versions/vs4XSgGN/FallingTree-1.21.8-1.21.8.2.jar"
-hash-format = "sha512"
-hash = "c3a12bc095fdd603b6bcd972772a937a0d6ce8b3bece81d1b4bc2cb45de7d6d5d4fabbe056f26ebe04f8052a92e3c62618b7b97767bd673abccb3f310e3ac457"
+hash-format = "sha256"
+hash = "820f500dc697876b5361b0d05f8282ee16612af28b070be125f8748bedd231e9"
 
 [update]
 [update.modrinth]

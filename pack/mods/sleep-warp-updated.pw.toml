@@ -1,11 +1,11 @@
 name = "SleepWarp (Updated)"
 filename = "sleepwarp-2.8.0+1.21.6.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/DlSXkZVT/versions/2AMKOBLR/sleepwarp-2.8.0%2B1.21.6.jar"
-hash-format = "sha512"
-hash = "dce51e8c4b72f025afa7f4d3cdc2a4bf052094753276614ac5546a2484f9cfcb160f5c80c0a3cd130c1e242c4cc3404d873c511a5467607cd22d5ad7f7e5480c"
+hash-format = "sha256"
+hash = "82fa44703ec1847004f6b947d8328179c52572333dc01f082b596bb2d27f4273"
 
 [update]
 [update.modrinth]

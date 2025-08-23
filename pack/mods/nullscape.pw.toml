@@ -1,11 +1,11 @@
 name = "Nullscape"
 filename = "Nullscape_1.21.x_v1.2.13.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/LPjGiSO4/versions/GdvpapkA/Nullscape_1.21.x_v1.2.13.jar"
-hash-format = "sha512"
-hash = "869540da8f56885c576c8933f4b737599f6e724b3df7e5112e23d1b0d295f96035aab92090611332b2de46696c40092cee6d13cb9d34bc0c42dcc640d3feda67"
+hash-format = "sha256"
+hash = "4c3d5805319c2d29e9bb2181a36d806b5014e1a07a90a1a9b9f62bd79a705bcd"
 
 [update]
 [update.modrinth]

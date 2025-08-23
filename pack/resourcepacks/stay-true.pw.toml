@@ -3,8 +3,8 @@ filename = "Stay True 1.21.5.zip"
 side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "b752181fa17cf99a67bc46a2c1569be621021493"
+hash-format = "sha256"
+hash = "c61397d8e9d1f15e069f718c0bd61c5c347be1f3e18603ea576dccb570302c82"
 mode = "metadata:curseforge"
 
 [update]

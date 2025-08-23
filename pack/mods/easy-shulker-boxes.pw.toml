@@ -4,8 +4,8 @@ side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/gA5euN8S/versions/eZUp8U9W/EasyShulkerBoxes-v21.8.3-1.21.8-Fabric.jar"
-hash-format = "sha512"
-hash = "4807be094c56a240bf547431c2e2914ae5299492c0d876b67f8f0828cd5823318c3511170fa9efc50d5fbd44bd8eba0e52ab078863a203cada3dcacdf0070270"
+hash-format = "sha256"
+hash = "d7e1545e98053b4f9261e890b1893c02367a7ea418abc433fc3d4d02f375dc8e"
 
 [update]
 [update.modrinth]

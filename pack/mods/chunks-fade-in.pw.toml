@@ -4,8 +4,8 @@ side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/JaNmzvA8/versions/ZvbQFC6o/chunksfadein-fabric-3.0.3-1.21.6.jar"
-hash-format = "sha512"
-hash = "79e9a9f1f91a1049925214e61295e348a1e1f1148fc0c6add016404440596af99bba60da98d4483ceab59a9e692b25c0a21ead42462a09b7849c295cd58c5c31"
+hash-format = "sha256"
+hash = "f95d8d07ffefc978f061656d3dc1f25953c02c4d5817bf9bec1f9e3889b6614a"
 
 [update]
 [update.modrinth]

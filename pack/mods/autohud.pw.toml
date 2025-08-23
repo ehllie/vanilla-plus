@@ -4,8 +4,8 @@ side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/temczoTQ/versions/8Pr09zfj/autohud-8.9%2B1.21.7-fabric.jar"
-hash-format = "sha512"
-hash = "1efa3d8ba67a599eaacda4262df7fbea52e3f853fe9693294fe46affa304860b61021601b8d1f41bae5df4d7bb89b083d668477522d9147de457638cfe460064"
+hash-format = "sha256"
+hash = "bf4a4e6b8e8043bcc30153d1ee7cc3bf24f2bcdd27e8d86f1596b44625613df1"
 
 [update]
 [update.modrinth]

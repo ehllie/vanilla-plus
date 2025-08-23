@@ -4,8 +4,8 @@ side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/9hx3AbJM/versions/HgAK2dAb/EasyMagic-v21.8.0-1.21.8-Fabric.jar"
-hash-format = "sha512"
-hash = "6b558b686f4163417ee2e186e805caf9506435ae6f63273d7d563a71de692b728b6d3014ca19e11bb68f0913a9dcb908d065b5a5c4731b53ec7c1221e005de14"
+hash-format = "sha256"
+hash = "311d9b1280433ce43111daa7f04e5452d9bde4f4186826076c454d8136a68a10"
 
 [update]
 [update.modrinth]

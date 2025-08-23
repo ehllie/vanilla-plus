@@ -4,8 +4,8 @@ side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/gWO6Zqey/versions/L1WNSxKw/vanilla-refresh-1.4.28.jar"
-hash-format = "sha512"
-hash = "c148e4100dac671d67439246e6ee8ac234f7db5fd850b9aeb537dbef9e002746d98d50df6d2947b1a2fb277819f9d4c449cb9759dda1939d056dc36191e70c66"
+hash-format = "sha256"
+hash = "d0d272e9269c036894ddcfd5385028cfdabe2410e51a6d33a9ecfc03b5698b23"
 
 [update]
 [update.modrinth]

@@ -4,8 +4,8 @@ side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/rcTfTZr3/versions/8pjCeA4P/PresenceFootsteps-1.11.1%2B1.21.7.jar"
-hash-format = "sha512"
-hash = "d87c12058f0333249e4b9b88bd32a583083016207252c356b65bced3ab1c034006f5b1a9035c0c3b06048de58bd70137463876cadf88e31ebbd0cfa891b4046a"
+hash-format = "sha256"
+hash = "bab061f211ccfa6141b713165c4faaf70ba9920c2ac4c2bddd3f02696fdb41d8"
 
 [update]
 [update.modrinth]
