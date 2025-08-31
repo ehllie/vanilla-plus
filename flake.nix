@@ -57,7 +57,7 @@
             default = vanilla-plus-server;
             vanilla-plus-server = (fetchPackwizModpack {
               src = ./pack;
-              packHash = "sha256-vqjBYXkHQ3q6zfWu54nkA6dGB0CyPxX4fDIF4dJWBoQ=";
+              packHash = "sha256-UpBZgmLN5OkaxUkcHONj0UWIK/hmjVwqh0WGOGNlmtI=";
             });
             vanilla-plus-manifest = pkgs.runCommand
               "vanilla-plus-manifest"

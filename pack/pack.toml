@@ -1,12 +1,12 @@
 name = "vanilla-plus"
 author = "Ehllie"
-version = "2.0.1"
+version = "2.0.2"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "cb2bf8f232177148a187793b32447ef0e84138f30865b3a8c8aaabd563f1bd8f"
+hash = "a6c28a7e79af1349f7ec9da86c77d3c6ce764fbcd16b68d1aa941f33a425f6ac"
 
 [versions]
 fabric = "0.17.2"

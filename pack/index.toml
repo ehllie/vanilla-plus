@@ -16,6 +16,11 @@ hash = "bf03bdade34ab5eef81aae0afa30036f9906fbe3d97efce1fb3bca4840e1d4de"
 metafile = true
 
 [[files]]
+file = "mods/audaki-cart-engine.pw.toml"
+hash = "8c109fd5ec82b0b77fcf75ca32353ba3b81938c68eb8f49fe25752f75a2b2711"
+metafile = true
+
+[[files]]
 file = "mods/autohud.pw.toml"
 hash = "4361892607a737bfbd4ec1fe26e42d349a15f2d1e95d98854f7d268621908a5e"
 metafile = true
